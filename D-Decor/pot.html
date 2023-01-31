@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color:LemonChiffon ;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background:lightblue;
+}
+
+.progress-bar {
+  height: 8px;
+  background:blue;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:black;
+  color: white;
+  transform: rotateY(180deg);
+}
+td{
+	padding:70px;
+}
+img{
+	width:1000px;
+	height:1000px;
+}
+.f1
+{
+	background:black;
+	text-align: center;
+    padding: 3px;
+    color: white;
+}
+</style>
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</head>
+<body>
+<div class="header">
+  <h2>:: Flower Pots ::</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+<table>
+<tr>
+	<td>
+	<div class="content">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot1.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: 3 Black Pots :</b></p> 
+					<p><h5>Price:200$</h5></p>
+					<p><h5>Delivery: in 7 days</h5></p>
+					<p><i><h6><u>Get 10% off on 1st order</u></h6></i></p>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot2.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: Combo of 5 Pots :</b></p> 
+					<p><h5>Price:500$</h5></p>
+					<p><h5>Delivery: in 12 days</h5></p>
+					<p><i><h6><u>Get 5% off on 1st order</u></h6></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</td>
+	<td>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot3.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: Mini Dambos :</b></p> 
+					<p><h5>Price:400$</h5></p>
+					<p><h5>Delivery: in 10 days</h5></p>
+					<p><i><h6><u>Made by using Westage</u></h6></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</td>
+</tr>
+<tr>
+	<td>
+	<div class="content">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot4.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: Simple Matke(4ps) :</b></p> 
+					<p><h5>Price:100$</h5></p>
+					<p><h5>Delivery: in 7 days</h5></p>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot5.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: Bicycle Pot :</b></p> 
+					<p><h5>Price:175$</h5></p>
+					<p><h5>Delivery: in 10 days</h5></p>
+					<p><i><h6><u>Get 7% off on 1st order</u></h6></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</td>
+	<td>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="pot6.jpg" alt="Lamp" style="width:300px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<P><b>: Artificial Pots :</b></p> 
+					<p><h5>Price:1000$</h5></p>
+					<p><h5>Delivery: in 15 days</h5></p>
+					<p><i><h6><u> Hand Crefted Pots made in Kuttch(Gujarat)</u></h6></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</td>
+</tr>
+</table>
+<footer class="f1">
+  <p> <b>D-Decor - Live Beautiful</b>
+  <br>ddecor07@gamil.com
+  </br>Owner : Shubham Lad
+  </p>
+</footer>
+</body>
+</html>

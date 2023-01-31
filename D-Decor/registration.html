@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <style>
+		body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background: url(home.jpg) no-repeat;
+		background-size:cover;
+    }
+	#l1{
+				width:300px;
+				height:100px;
+			}
+	.signbox
+	{
+		width: 300px;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 40px;
+		background-color:#FFEBCD;
+		border-radius: 55px;
+		border: 7px solid gray;	
+	}
+	.signbox h1
+	{
+		float:left;
+		font-size: 40px;
+		font-style: bold;
+		margin-bottom: 1px;
+		padding: 10px 0;
+	}
+	.textbox
+	{
+		width: 100%;
+		overflow: hidden;
+		font-size: 20px;
+		margin: 8px 0;
+		padding:10px;
+		border-bottom: 1px solid #080808;
+	}
+	.textbox input
+	{
+		border: none;
+		outline: none;
+		background: none;
+		color: black;
+		font-size: 18px;
+		width: 100%;
+		margin: 10 0px;
+	}
+	
+	.btn
+	{
+		width: 100%;
+		background: none;
+		border: 2px lightblack; 
+		color: black;
+		padding: 5px;
+		font-size: 18px;
+		cursor: pointer;
+		margin: 12px 0;
+	}
+	 .signUpBtn
+	{
+		width: 100%;
+		background-color:silver;
+		border: 5px lightblack; 
+		color: black;
+		padding: 1px;
+		font-size: 20px;
+		cursor: pointer;
+		margin: 5px 0;
+		border-radius:20px;
+	}
+	a:link{
+		color:blue;
+		text-decoration:none;
+		background-color:syan;
+	}
+	a:visited{
+		color:black;
+		text-decoration:none;
+		background-color:syan;
+	}
+	A:hover{
+		color:red;
+		text-decoration:none;
+		background-color:syan;
+	}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+</br></br></br>
+		<div class="title">
+			<img src="logo.jpg" id="l1"></img>
+		</div>
+	<div class="signbox">
+	<h1>Registration</h1>
+    <div class="form">
+        <div class="textbox">
+			<i class="fa fa-user-circle-o"></i>
+			<input type="text" id="userName" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="textbox">
+			<i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="textbox">
+			<i class="fa fa-lock"></i>
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="textbox">
+			<i class="fa fa-check-square-o"></i>
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+         </div>
+		 <div class="btn">
+        <button class="signUpBtn"><a href="product.html"/>SIGN UP</button>
+      </div>
+  </div>
+ 
+  <script src="jQuery.js"></script>
+</body>

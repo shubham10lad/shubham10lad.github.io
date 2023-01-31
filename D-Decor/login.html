@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background: url(home.jpg) no-repeat;
+		background-size:cover;
+    }
+	.loginbox
+	{
+		width: 300px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 30px;
+		background-color:#FFEBCD;
+		border-radius: 55px;		
+		border: 7px solid gray;	
+	}
+	.loginbox h1
+	{
+		float:left;
+		font-size: 40px;
+		font-style: bold;
+		margin-bottom: 20px;
+		padding: 10px 5;
+	}
+	.textbox
+	{
+		width: 100%;
+		overflow: hidden;
+		font-size: 20px;
+		padding: 8px 0;
+		margin: 8px 0;
+		border-bottom: 1px solid #080808;
+	}
+	.textbox i
+	{
+		width: 20px;
+		float: left;
+		text-align: center;
+	}
+	.textbox input
+	{
+		border: none;
+		outline: none;
+		background: none;
+		color: black;
+		font-size: 18px;
+		width: 80%;
+		float: left;
+		margin: 0 10px;
+	}
+	.signUpBtn
+	{
+		width: 100%;
+		background-color:silver;
+		border: 5px lightblack;
+		color: black;
+		padding: 1px;
+		font-size: 20px;
+		cursor: pointer;
+		margin: 8px 0;
+		border-radius:20px;
+	}
+	.loginBtn
+	{
+		width: 100%;
+		background-color:silver;
+		border: 5px lightblack; 
+		color: black;
+		padding: 1px;
+		font-size: 20px;
+		cursor: pointer;
+		margin: 5px 0;
+		border-radius:20px;
+	}
+	a:link{
+		color:blue;
+		text-decoration:none;
+		background-color:syan;
+	}
+	a:visited{
+		color:black;
+		text-decoration:none;
+		background-color:syan;
+	}
+	A:hover{
+		color:red;
+		text-decoration:none;
+		background-color:syan;
+	}
+	#l1{
+				width:300px;
+				height:100px;
+			}
+	</style>
+    <script href="bootstrap/js/bootstrap.min.js"> </script>
+    <script href="bootstrap/js/popper.min.js"></script>
+    <script href="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+<body></br></br></br>
+		<div class="title">
+			<img src="logo.jpg" id="l1"></img>
+		</div>
+	<div class="loginbox">
+		<h1>L<span style='font-size:30px;'>&#128579;</span>&#286&#207N</h1>
+		<div class="textbox">
+			<i class="fa fa-user-circle-o"></i>
+			<input type="text" placeholder="User Id">
+		</div>
+		<div class="textbox">
+			<i class="fa fa-lock"></i>
+			<input type="password" placeholder="Password">
+		</div>
+		<div class="btn">
+        <button class="loginBtn"><a href="product.html"/>Log In</button>
+		<button class="signUpBtn"><a href="registration.html"/>Sign Up</button>
+      </div>
+		
+	</div>
+</body>
+</html>

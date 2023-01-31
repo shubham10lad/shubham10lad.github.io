@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Navigation Bar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			outline: none;
+			font-family: 'Merriweather',serif;
+		}
+		.top-navbar
+		{
+			display: flex;
+			justify-content: space-between;
+	    }
+		.top-navbar p
+		{
+			margin-top: 13px;
+			margin-right: 15px;
+		}
+		.top-navbar .icon
+		{
+			margin-top: 13px;
+			margin-right: 15px;
+		}
+		.top-navbar a
+		{
+			text-decoration: none;
+			color: black;
+			margin-left: 10px;
+		}
+		.top-navbar a i
+		{
+			margin-bottom: 3px;
+		}
+		.top-navbar a:hover
+		{
+			color: black;
+		}
+		@media screen and (max-width:400px)
+		{
+			.top-navbar a
+			{
+				font-size: 13px;
+			}
+			.top-navbar a i
+			{
+				width: 15px;
+			}
+			.top-navbar p
+			{
+				font-size: 13px;
+			}
+		}
+		@media screen and (max-width:320px)
+		{
+			.top-navbar a
+			{
+				font-size: 10px;
+			}
+			.top-navbar a i
+			{
+				width: 13px;
+			}
+			.top-navbar p
+			{
+				font-size: 10px;
+			}
+		}
+		@media screen and (max-width:318px)
+		{
+			.top-navbar a
+			{
+				font-size: 8px;
+				margin-left: 0;
+			}
+			.top-navbar a i
+			{
+				width: 10px;
+				margin-left: 0;
+				
+			}
+			.top-navbar p
+			{
+				font-size: 10px;
+				margin-top: 20px;
+			}
+		}
+	#navbar
+		{
+			background-color: #E75480;
+		}
+	#logo
+	{
+		margin-left: 15px;
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+	#logo span
+	{
+		color: #FF1493;
+	}
+	#logo #span1
+	{
+		font-size: 30px;
+		color: white;
+	}
+	.navbar-nav
+	{
+		margin-left: 20px;
+	}
+	.nav-item
+	{
+		margin-left: 10px;
+	}
+	.nav-item .nav-link
+	{
+		color: white;
+		margin-left: 2px;
+		text-shadow: 0px 0px 1px black;
+		transition: 0.5s ease;
+	}
+	.nav-item .nav-link:hover
+	{
+		color: rgb(67 0 86);
+	}
+	#search input
+	{
+		border-radius: 50px;
+		border: none;
+	}
+	#search button
+	{
+		border-radius: 50px;
+		color: white;
+		background-color: rgb(67 0 86); 
+		
+	}
+	.b1 img
+	{
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	</style>
+    <script href="bootstrap/js/bootstrap.min.js"> </script>
+    <script href="bootstrap/js/popper.min.js"></script>
+    <script href="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="top-navbar">
+			<p>WELCOME TO OUR SHOP</p>
+		<div class="icons">
+			<a href="flower.html"><i class="fa fa-sign-out"></i>Login</a>
+			<a href="reg.html"><i class="fa fa-sign-out"></i>Register</a>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<div class="container-fluid">
+		 <a class="navbar-brand" href="nav.html" id="logo"><span id="span1">Flower</span> <span id="span1">Shop</span></a>
+		 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span><i class="fa fa-bars"></i></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			 <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nav.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+              <a class="nav-link" href="pro.html">Product</a>
+			 </li>
+			 <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item">
+              <a class="nav-link" href="rew.html">Review</a>
+			 </li>
+			 <li class="nav-item">
+              <a class="nav-link" href="con.html">Contact</a>
+			 </li>
+			</ul>
+		    <form class="d-flex" id="search">
+             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+		    </form>
+		</div>
+	</div>
+	</nav>
+	<div class="b1">
+		<img src="C:/Jinal/flower shop website/images/img2.jpg" alt="">
+	</div>
+</body>
+</html>
